@@ -1,4 +1,4 @@
-@import "./variable.scss";
+@use "./variables.scss" as *;
 
 * {
   margin: 0;
