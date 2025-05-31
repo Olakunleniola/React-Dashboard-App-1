@@ -1,0 +1,38 @@
+// COLORS
+// Background
+$main-bg: #2a3447;
+$soft-bg: #384256;
+$dark-bg: #222b3c;
+// text
+$main-color: white;
+$soft-color: #ddd;
+$dark-color: #2a3447;
+
+// RESPONSIVE BREAKPOINTS
+$sm: 480px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// SPACING
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// BORDER RADIUS
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+
+// BOX SHADOW
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+// TRANSITIONS
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.4s ease; 
