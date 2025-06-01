@@ -1,4 +1,4 @@
-import "./chartbox.scss";
+import "./linechartbox.scss";
 import { Link } from "react-router-dom";
 import { ResponsiveContainer, LineChart, Line, Tooltip } from "recharts";
 
@@ -12,7 +12,7 @@ type Props = {
   percentage: number;
 }
 
-const ChartBox = (props: any) => { 
+const LineChartBox = (props: Props) => { 
   return (
     <div className="chartBox">
       <div className="boxInfo">
@@ -51,4 +51,4 @@ const ChartBox = (props: any) => {
   );
 };
 
-export default ChartBox;
+export default LineChartBox;
