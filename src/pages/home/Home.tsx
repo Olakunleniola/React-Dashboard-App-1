@@ -4,6 +4,10 @@ import LineChartBox from "../../component/lineChartBox/LineChartBox";
 import { chartBoxUser, chartBoxProduct, chartBoxRevenue, chartBoxConversion,  } from "../../data";
 import BarChartBox from "../../component/barChartBox/BarChartBox";
 import { barChartBoxRevenue, barChartBoxVisit } from "../../data";
+import PieChartBox from "../../component/pieChartBox/PieChartBox";
+
+
+
 function Home() {
   return (
     <div className="home">
@@ -16,7 +20,9 @@ function Home() {
       <div className="box box3">
         <LineChartBox {...chartBoxProduct} />
       </div>
-      <div className="box box4"></div>
+      <div className="box box4">
+        <PieChartBox />
+      </div>
       <div className="box box5">
         <LineChartBox {...chartBoxConversion} />
       </div>
