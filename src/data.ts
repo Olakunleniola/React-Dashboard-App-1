@@ -279,6 +279,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: true,
+    age: 28,
   },
   {
     id: 2,
@@ -289,6 +290,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: true,
+    age: 32,
   },
   {
     id: 3,
@@ -299,6 +301,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: true,
+    age: 45,
   },
   {
     id: 4,
@@ -309,6 +312,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: true,
+    age: 24,
   },
   {
     id: 5,
@@ -319,6 +323,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: true,
+    age: 35,
   },
   {
     id: 6,
@@ -329,6 +334,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: true,
+    age: 29,
   },
   {
     id: 7,
@@ -339,6 +345,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: true,
+    age: 31,
   },
   {
     id: 8,
@@ -349,6 +356,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: false,
+    age: 27,
   },
   {
     id: 9,
@@ -359,6 +367,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: true,
+    age: 38,
   },
   {
     id: 10,
@@ -369,6 +378,7 @@ export const userRows = [
     phone: "123 456 789",
     createdAt: "01.02.2023",
     verified: false,
+    age: 26,
   },
 ];
 

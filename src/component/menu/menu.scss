@@ -1,13 +1,13 @@
 @use "../../styles/variables.scss" as *;
 
-.main {
-    
+.menu {
+
     .item {
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin-bottom: 20px;
-        
+
         .title {
             font-size: 12px;
             font-weight: 200;
@@ -26,6 +26,6 @@
                 background-color: $soft-bg;
             }
         }
-         
+
     }
 }

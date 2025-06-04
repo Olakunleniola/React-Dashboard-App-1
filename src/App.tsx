@@ -2,7 +2,7 @@ import Navbar from "./component/navbar/NavBar";
 import Home from "./pages/home/Home";
 import Product from "./pages/product/Product";
 import Footer from "./component/footer/Footer";
-import Main from "./component/main/Main";
+import Menu from "./component/menu/Menu";
 import { RouterProvider, Outlet } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
 import Users from "./pages/users/Users";
@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <div className="container">
           <div className="menuContainer">
-            <Main />
+            <Menu />
           </div>
           <div className="contentContainer">
             <Outlet />

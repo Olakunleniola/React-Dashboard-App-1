@@ -2,7 +2,6 @@ import {
   DataGrid,
   GridColDef,
   GridToolbar,
-  GridValueGetterParams,
 } from "@mui/x-data-grid";
 import "./datatable.scss";
 import { Link } from "react-router-dom";
@@ -10,14 +9,13 @@ import { Link } from "react-router-dom";
 type Props = {
   columns: GridColDef[];
   rows: any;
-  slug: string
+  slug: string;
 };
 
 function DataTable(props: Props) {
-
-  const handleDelete = (id:number) => {
-    console.log(`${id} have been deleted`)
-  }
+  const handleDelete = (id: number) => {
+    console.log(`${id} have been deleted`);
+  };
 
   const actionColumn: GridColDef = {
     field: "action",

@@ -1,19 +1,20 @@
 import "./users.scss";
+import { useState } from "react";
 import DataTable from "../../component/dataTable/DataTable";
 import { GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import { userRows } from "../../data";
+import Add from "../../component/add/Add";
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90 },
   {
-    field: "avatar",
+    field: "img",
     headerName: "Avatar",
     width: 150,
     renderCell: (params) => {
       return <img src={params.row.img || "/noavatar.png"} alt="" />;
     },
   },
-  { field: "verified", headerName: "Status", type: "boolean", width: 100 },
   {
     field: "firstName",
     headerName: "First name",
@@ -26,34 +27,53 @@ const columns: GridColDef[] = [
     width: 150,
     editable: true,
   },
+  // {
+  //   field: "fullName",
+  //   headerName: "Full name",
+  //   description: "This column has a value getter and is not sortable.",
+  //   sortable: false,
+  //   width: 160,
+  //   valueGetter: (params: GridValueGetterParams) =>
+  //     `${params.row.firstName || ""} ${params.row.lastName || ""}`,
+  // },
+
   {
-    field: "age",
-    headerName: "Age",
-    type: "number",
-    width: 110,
-    editable: true,
+    field: "email",
+    headerName: "Email",
+    type: "string",
+    width: 200,
   },
+
   {
-    field: "fullName",
-    headerName: "Full name",
-    description: "This column has a value getter and is not sortable.",
-    sortable: false,
-    width: 160,
-    valueGetter: (params: GridValueGetterParams) =>
-      `${params.row.firstName || ""} ${params.row.lastName || ""}`,
+    field: "phone",
+    headerName: "Phone",
+    type: "string",
+    width: 200,
   },
+  // {
+  //   field: "age",
+  //   headerName: "Age",
+  //   type: "number",
+  //   width: 110,
+  //   editable: true,
+  // },
+  { field: "createdAt", headerName: "Created At", width: 200 },
+  { field: "verified", headerName: "Status", type: "boolean", width: 100 },
 ];
 
 function Users() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="users">
       <div className="info">
         <h1> Users </h1>
-        <button>Add New User</button>
+        <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
       <div className="dataGrid">
         <DataTable slug="user" columns={columns} rows={userRows} />
       </div>
+      {open && <Add setOpen={setOpen} slug="user" columns={columns} />}
     </div>
   );
 }
