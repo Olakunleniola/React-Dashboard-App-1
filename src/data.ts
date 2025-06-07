@@ -7,13 +7,13 @@ export const menu = [
         id: 1,
         title: "Homepage",
         url: "/",
-        icon: "home.svg",
+        icon: "/home.svg",
       },
       {
         id: 2,
         title: "Profile",
         url: "/user/1",
-        icon: "user.svg",
+        icon: "/user.svg",
       },
     ],
   },
@@ -25,25 +25,25 @@ export const menu = [
         id: 1,
         title: "Users",
         url: "/users",
-        icon: "user.svg",
+        icon: "/user.svg",
       },
       {
         id: 2,
         title: "Products",
         url: "/products",
-        icon: "product.svg",
+        icon: "/product.svg",
       },
       {
         id: 3,
         title: "Orders",
         url: "/orders",
-        icon: "order.svg",
+        icon: "/order.svg",
       },
       {
         id: 4,
         title: "Posts",
         url: "/posts",
-        icon: "post2.svg",
+        icon: "/post2.svg",
       },
     ],
   },
@@ -55,25 +55,25 @@ export const menu = [
         id: 1,
         title: "Elements",
         url: "/",
-        icon: "element.svg",
+        icon: "/element.svg",
       },
       {
         id: 2,
         title: "Notes",
         url: "/",
-        icon: "note.svg",
+        icon: "/note.svg",
       },
       {
         id: 3,
         title: "Forms",
         url: "/",
-        icon: "form.svg",
+        icon: "/form.svg",
       },
       {
         id: 4,
         title: "Calendar",
         url: "/",
-        icon: "calendar.svg",
+        icon: "/calendar.svg",
       },
     ],
   },
@@ -85,13 +85,13 @@ export const menu = [
         id: 1,
         title: "Settings",
         url: "/",
-        icon: "setting.svg",
+        icon: "/setting.svg",
       },
       {
         id: 2,
         title: "Backups",
         url: "/",
-        icon: "backup.svg",
+        icon: "/backup.svg",
       },
     ],
   },
@@ -103,13 +103,13 @@ export const menu = [
         id: 1,
         title: "Charts",
         url: "/",
-        icon: "chart.svg",
+        icon: "/chart.svg",
       },
       {
         id: 2,
         title: "Logs",
         url: "/",
-        icon: "log.svg",
+        icon: "/log.svg",
       },
     ],
   },
@@ -483,3 +483,104 @@ export const products = [
     inStock: true,
   },
 ];
+
+export const singleUser = {
+  id: 1,
+  img: "https://randomuser.me/api/portraits/men/1.jpg",
+  title: "John Doe",
+  info: {
+    Username: "John Doe",
+    Email: "john@gmail.com",
+    Phone: "123 456 789",
+    Age: 28,
+    Address: "123 Main St, Anytown, USA",
+  },
+  chart: {
+    dataKeys: [
+      { name: "visits", color: "red" },
+      { name: "clicks", color: "yellow" },
+    ],
+    data: [
+      { name: "Sun", visits: 400, clicks: 200 },
+      { name: "Mon", visits: 600, clicks: 300 },
+      { name: "Tue", visits: 500, clicks: 250 },
+      { name: "Wed", visits: 700, clicks: 350 },
+      { name: "Thu", visits: 400, clicks: 200 },
+      { name: "Fri", visits: 500, clicks: 250 },
+      { name: "Sat", visits: 450, clicks: 225 },
+    ],
+  },
+  activities: [
+    {
+      text: "John Doe updated a post",
+      time: "2 days ago",
+    },
+    {
+      text: "John Doe updated a post",
+      time: "3 days ago",
+    },
+    {
+      text: "John Doe updated a post",
+      time: "3 days ago",
+    },
+    {
+      text: "John Doe updated a post",
+      time: "4 days ago",
+    },
+    {
+      text: "John Doe updated a post",
+      time: "5 days ago",
+    },
+  ],
+};
+
+export const singleProduct = {
+  id: 1,
+  img: "https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw1b537bbb/images/PLAYSTATION5W/PLAYSTATION5W.png",
+  title: "Playstation 5 Digital Edition",
+  info: {
+    color: "white",
+    producer: "Sony",
+    price: "$250.99",
+    category: "Gaming",
+    size: "1TB",
+  },
+  chart: {
+    dataKeys: [{ name: "sales", color: "red" }],
+    data: [
+      { name: "Sun", sales: 400 },
+      { name: "Mon", sales: 600 },
+      { name: "Tue", sales: 500 },
+      { name: "Wed", sales: 700 },
+      { name: "Thu", sales: 400 },
+      { name: "Fri", sales: 500 },
+      { name: "Sat", sales: 450 },
+    ],
+  },
+  activities: [
+    {
+      text: "Playstation 5 Digital Edition sold",
+      time: "2 days ago",
+    },
+    {
+      text: "Playstation 5 Digital Edition sold",
+      time: "3 days ago",
+    },
+    {
+      text: "Playstation 5 Digital Edition sold",
+      time: "3 days ago",
+    },
+    {
+      text: "Playstation 5 Digital Edition sold",
+      time: "3 days ago",
+    },
+    {
+      text: "Playstation 5 Digital Edition sold",
+      time: "4 days ago",
+    },
+    {
+      text: "Playstation 5 Digital Edition sold",
+      time: "5 days ago",
+    },
+  ],
+};
