@@ -33,7 +33,7 @@ function App() {
       element: <Layout />,
       children: [
         { path: "/", element: <Home /> },
-        { path: "product", element: <Product /> },
+        { path: "products", element: <Product /> },
         { path: "users", element: <Users /> },
       ],
     },
