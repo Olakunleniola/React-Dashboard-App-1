@@ -5,6 +5,7 @@ import {
 } from "@mui/x-data-grid";
 import "./datatable.scss";
 import { Link } from "react-router-dom";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 type Props = {
   columns: GridColDef[];
@@ -13,8 +14,23 @@ type Props = {
 };
 
 function DataTable(props: Props) {
+
+  const queryClient = useQueryClient();
+
+  const mutation = useMutation({  
+    mutationFn: (id: number) => {
+      return fetch(`http://localhost:8800/api/${props.slug}s/${id}`, {
+        method: "DELETE",
+      });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries([`${props.slug}s`])
+    }
+
+  })
+
   const handleDelete = (id: number) => {
-    console.log(`${id} have been deleted`);
+    mutation.mutate(id);
   };
 
   const actionColumn: GridColDef = {
@@ -39,7 +55,7 @@ function DataTable(props: Props) {
     <div className="datatable">
       <DataGrid
         className="dataGrid"
-        rows={props.rows}
+        rows={props.rows ?? []}
         columns={[...props.columns, actionColumn]}
         initialState={{
           pagination: {
