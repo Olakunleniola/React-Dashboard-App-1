@@ -1,0 +1,9 @@
+@use "../../styles/responsive.scss" as *;
+
+.product {
+    width: 100%;
+
+    @include lg {
+        overflow: hidden;
+    }
+}

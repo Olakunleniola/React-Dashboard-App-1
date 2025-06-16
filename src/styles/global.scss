@@ -1,4 +1,5 @@
 @use "./variables.scss" as *;
+@use "./responsive.scss" as *;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
@@ -28,7 +29,7 @@ a {
   min-height: 100vh;
   position: relative;
   width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .container {
@@ -42,10 +43,29 @@ a {
   padding: 5px 20px;
   border-right: 2px solid $soft-bg;
   flex-shrink: 0;
+
+  @include lg {
+    width: max-content;
+    padding: 5px 10px;
+  }
+
+  @include md {
+    width: 80px;
+  }
+
+  @include sm {
+    display: none;
+  }
 }
 
 .contentContainer {
   padding: 5px 20px;
   width: 100%;
   overflow-x: hidden;
+
+  @include xxl {}
+
+  @include lg {
+    padding: 5px 5px;
+  }
 }

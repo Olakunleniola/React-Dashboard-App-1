@@ -1,3 +1,5 @@
+@use "../../styles/responsive.scss" as *;
+
 .navbar {
     width: 100%;
     padding: 20px;
@@ -19,6 +21,12 @@
         gap: 20px; 
         font-weight: bold;
 
+        .icon {
+            @include xs {
+                display: none;
+            }
+        }
+
         .notifications {
             position: relative;
             
@@ -37,6 +45,10 @@
                 font-size: 10px;
                 // font-weight: bold;
             }
+
+            @include sm {
+                display: none;
+            }
         }
         
         .user {
@@ -50,6 +62,10 @@
                 height: 26px;  
                 border-radius: 50%; 
                 object-fit: cover;
+            }
+
+            @include sm {
+                display: none;
             }
         }
         
